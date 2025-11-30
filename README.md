@@ -51,13 +51,19 @@ Then open index.html in your browser.
 3. The gradient center moves smoothly, revealing the video underneath.
 
 ## 📜 Core Logic
+
 JavaScript:
+```
 document.addEventListener("mousemove", (e) => {
     document.documentElement.style.setProperty("--x", e.clientX + "px");
     document.documentElement.style.setProperty("--y", e.clientY + "px");
 });
+```
+
 CSS Spotlight:
+```
 background: radial-gradient(200px at var(--x) var(--y), rgba(255, 255, 255, 0.35), rgba(0, 0, 0, 0.95));
+```
 
 ## 🔮 Future Enhancements
 - Smooth delayed spotlight movement
